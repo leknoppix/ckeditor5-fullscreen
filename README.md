@@ -11,7 +11,7 @@ npm i -D @ckeditor/ckeditor5-ui
 Include in your ckeditor.js
 
 ```
-import FullScreen from './fullscreen/FullScreen';
+import FullScreen from './FullScreen';
 ```
 
 Include in the plugin List
