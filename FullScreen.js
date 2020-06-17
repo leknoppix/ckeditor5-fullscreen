@@ -21,6 +21,7 @@ export default class FullScreen extends Plugin {
             view.on( 'execute', () => {
                 if(etat==1){
                     editor.sourceElement.nextElementSibling.removeAttribute('id');
+                    document.body.removeAttribute('id');
                     view.set( {
                         label: 'Plein écran',
                         icon: ImageFullBig,
@@ -29,6 +30,7 @@ export default class FullScreen extends Plugin {
                     etat=0;
                 }else{
                     editor.sourceElement.nextElementSibling.setAttribute("id", 'fullscreeneditor');
+                    document.body.setAttribute("id", "fullscreenoverlay");
                     view.set( {
                         label: 'Mode Normal',
                         icon: ImageFullCancel,
